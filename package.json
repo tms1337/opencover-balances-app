@@ -1,0 +1,20 @@
+{
+  "name": "opencover-balances",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npx lerna run dev --scope opencover-balances-api --scope opencover-balances-web"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^8.1.5"
+  },
+  "nohoist": [
+    "**/api/**",
+    "**/api/**/jest",
+    "**/web/**",
+    "**/web/**/jest"
+  ]
+}
